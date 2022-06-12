@@ -11,47 +11,36 @@
     <header class="header">
       <div class="header__wrapper">
         <div class="header__row">
-          <div class="header__col">
-            <a href="/" class="logo">
-              <img
-                src="<%=require('../../images/placeholder-logo.svg')%>"
-                alt="Logo"
-                class="logo__image"
-              />
-            </a>
-          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#classy" class="nav__link">Buttons</a>
+              </li>
+            </ul>
+          </nav>
+          <h3 class="logo">Fun Styles</h3>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#classy" class="nav__link">Style 1</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
     <main>
-      <section class="section">
-        <div class="section__wrapper">
-          <div class="section__row">
-            <div class="section__col">
-              <h1>Project Title</h1>
-            </div>
-            <div class="section__col">
-              <img
-                class="image--contain"
-                src="<%=require('../../images/folder.svg')%>"
-                alt="folder"
-              />
-            </div>
-          </div>
+      <div class="container">
+        <div class="container__wrapper">
+          <div id="grid--main" class="container__row grid"></div>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__row">
           <div class="footer__col">
-            <a href="/" class="logo">
-              <img
-                src="<%=require('../../images/placeholder-logo.svg')%>"
-                alt="Home"
-                class="logo__image"
-              />
-            </a>
+            <p>Words will go here eventually.</p>
           </div>
         </div>
       </div>

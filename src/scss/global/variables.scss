@@ -1,8 +1,8 @@
 @use 'sass:math';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap');
 
 // Fonts
-$base-font-family: 'Montserrat', sans-serif;
+$base-font-family: 'Inter', sans-serif;
 $heading-font-family: $base-font-family;
 
 // Font Size
@@ -20,6 +20,7 @@ $base-font-weight: 400;
 $heading-font-weight: 900;
 
 // Site Width
+$site-width-extra-large: 1905px;
 $site-width-large: 1400px;
 $site-width-medium: 1040px;
 $site-width-small: 840px;
@@ -49,6 +50,13 @@ $light-pink: #ffa4a4;
 $red: #e74c3c;
 $blue: blue;
 
+// Style 0 Colors
+$color-0: #edede9;
+$color-1: #d6ccc2;
+$color-2: #f5ebe0;
+$color-3: #e3d5ca;
+$color-4: #d5bdaf;
+
 $links: $black;
 $hover: $black;
 
@@ -67,7 +75,7 @@ $btn-text-color-hover: $white;
 $btn-border-radius: 0;
 
 // Border
-$base-border-color: $black;
+$base-border-color: $color-0;
 $base-border: 2px solid $base-border-color;
 
 // Background Colors

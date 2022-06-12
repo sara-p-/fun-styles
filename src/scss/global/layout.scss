@@ -22,17 +22,13 @@ body {
   padding: 0;
 }
 
-.section {
-  $self: &;
+main {
+  padding-top: 95.2px;
+}
+
+.container {
   position: relative;
   width: 100%;
-  &--fullscreen {
-    height: calc(100vh - 90.5px);
-    #{$self}__wrapper,
-    #{$self}__row {
-      height: 100%;
-    }
-  }
   &__wrapper {
     width: 100%;
     max-width: $site-width-extra-large;
@@ -41,32 +37,24 @@ body {
   }
   &__row {
     width: 100%;
-    @include flex;
   }
-  &__col {
-    flex: 1;
-    padding: 0 $spacing-24;
-    &--flex {
-      height: 100%;
-      @include flex;
-    }
-  }
-  // &__content {
-  //   max-width: 500px;
-  //   margin: auto;
-  // }
 }
 
 .header,
 .footer {
   &__wrapper {
-    @extend .section__wrapper;
+    width: 100%;
+    max-width: $site-width-extra-large;
+    margin: auto;
+    padding: 0 $spacing-24;
   }
   &__row {
-    @extend .section__row;
+    width: 100%;
+    @include flex;
   }
   &__col {
-    @extend .section__col;
+    flex: 1;
+    padding: 0 $spacing-24;
   }
 }
 
@@ -78,6 +66,19 @@ body {
   width: 0;
   height: 0;
   opacity: 0;
+}
+
+// ********************* GRID ********************** //
+.grid {
+  display: block;
+  @include tablet-landscape-up {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: calc(40vh - 72px);
+    // grid-auto-rows: calc(100vh - 95.2px);
+    // grid-auto-rows: calc(50vh - 72px);
+    grid-gap: $spacing-24;
+  }
 }
 
 // ********************* FLEXBOX ********************** //
@@ -117,19 +118,6 @@ body {
     }
   }
 }
-
-// ********************* GRID ********************** //
-// .grid {
-//   @for $i from 1 through 5 {
-//     &--#{$grid-space * $i} {
-//       grid-template-columns: repeat(auto-fill, minmax($grid-space * $i, 1fr));
-//       grid-template-rows: repeat(auto-fill, minmax($grid-space * $i, 1fr));
-//     }
-//   }
-//   &--column {
-//     grid-auto-flow: column;
-//   }
-// }
 
 // ********************* LAYOUT MODIFIERS ********************** //
 .padding {

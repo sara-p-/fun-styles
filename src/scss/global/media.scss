@@ -19,9 +19,18 @@ img {
   }
 }
 
-.logo__image {
-  max-width: 130px;
-  @include tablet-portrait-up {
-    max-width: 200px;
+// .bg {
+//   @for $style from 0 through 4 {
+//     @for $number from 0 through 4 {
+//       &__color-#{$style}-#{$number} {
+//         background: $color-#{$style}-#{$number};
+//       }
+//     }
+//   }
+// }
+
+.bg {
+  &--color-0 {
+    background: $color-0;
   }
 }
