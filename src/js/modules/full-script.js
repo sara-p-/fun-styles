@@ -1,13 +1,13 @@
 import { createTheTitle } from './helpers'
-import { createTheItem } from './html-components'
+import { createTheItem, createTheItems } from './html-components'
 
 export default function fullScript() {
-  const theTypes = ['button', 'input']
-  const gridMain = document.querySelector('#grid--main')
+  const theTypes = ['button']
+  const gridMain = document.querySelector('#grid--box')
   const theItems = []
 
   theTypes.forEach((type, index) => {
-    for (let styleIndex = 0; styleIndex < 5; styleIndex++) {
+    for (let styleIndex = 0; styleIndex < 4; styleIndex++) {
       theItems.push(
         createTheItem(type, createTheTitle(type), index, styleIndex)
       )

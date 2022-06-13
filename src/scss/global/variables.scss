@@ -1,9 +1,10 @@
 @use 'sass:math';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Roboto+Slab:wght@300;400&display=swap');
 
 // Fonts
-$base-font-family: 'Inter', sans-serif;
-$heading-font-family: $base-font-family;
+$base-font-family: 'Roboto', sans-serif;
+$secondary-font-family: 'Roboto Slab', serif;
+$heading-font-family: 'Oswald', sans-serif;
 
 // Font Size
 $base-font-size: 16px;
@@ -56,6 +57,14 @@ $color-1: #d6ccc2;
 $color-2: #f5ebe0;
 $color-3: #e3d5ca;
 $color-4: #d5bdaf;
+$color-5: #f2e9e4;
+
+// Style 1 Colors
+$color-1-0: #9b5de5;
+$color-1-1: #f15bb5;
+$color-1-2: #fee440;
+$color-1-3: #00bbf9;
+$color-1-4: #00f5d4;
 
 $links: $black;
 $hover: $black;
@@ -77,6 +86,10 @@ $btn-border-radius: 0;
 // Border
 $base-border-color: $color-0;
 $base-border: 2px solid $base-border-color;
+
+// Box Shadow
+$box-shadow: 0px 0px 5px 0px rgba(119, 119, 119, 0.5);
+$box-shadow-inset: inset 0px 0px 5px 0px rgba(119, 119, 119, 0.5);
 
 // Background Colors
 $viewport-background-color: $white;
@@ -108,5 +121,17 @@ $_form-box-shadow-focus: $_form-box-shadow,
   0 0 5px rgba($base-border-color, 0.7);
 $input-padding: 16px 0.8em 14px;
 
-// Grid Settings
-$grid-space: 50px;
+// Gradients
+$gradient-1: linear-gradient(
+  61deg,
+  rgba(194, 194, 181, 1) 0%,
+  rgba(237, 237, 233, 1) 50%,
+  rgba(194, 194, 181, 1) 100%
+);
+
+$gradient-2: linear-gradient(
+  61deg,
+  rgba(237, 237, 233, 1) 0%,
+  rgba(194, 194, 181, 1) 50%,
+  rgba(237, 237, 233, 1) 100%
+);
